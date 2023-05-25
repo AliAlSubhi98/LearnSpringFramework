@@ -1,17 +1,15 @@
 package com.alialsubhi.demo;
 
 import com.alialsubhi.demo.game.GameRunner;
-import com.alialsubhi.demo.game.MarioGame;
 import com.alialsubhi.demo.game.PacmanGame;
-import com.alialsubhi.demo.game.SuperContraGame;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class App01GamingBasicJava {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(App01GamingBasicJava.class, args);
 /*
 ### Tight Coupling vs Loose Coupling
 * **Tight Coupling:** When two classes are tightly coupled, they are dependent on each other. If one class changes, the other class will also change.
