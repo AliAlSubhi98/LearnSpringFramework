@@ -2,6 +2,7 @@ package com.alialsubhi.demo;
 
 import com.alialsubhi.demo.game.GameRunner;
 import com.alialsubhi.demo.game.MarioGame;
+import com.alialsubhi.demo.game.PacmanGame;
 import com.alialsubhi.demo.game.SuperContraGame;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,9 +21,10 @@ public class DemoApplication {
 In the example below, GameRunner class has a dependency on GamingConsole. Instead of wiring game object to a specific class such as MarioGame, we can use GamingConsole interface to make it loosely coupled. So that, we don't need to change our original code. In the future, we can create classes that implements GamingConsole interface (Polymorphism) and use it.
 
  */
-		//var marioGame =  new MarioGame();
-		var superContraGame = new SuperContraGame();
-		var gameRunner = new GameRunner(superContraGame);
+		//var game =  new MarioGame();
+		//var game = new SuperContraGame();
+		var game = new PacmanGame();
+		var gameRunner = new GameRunner(game);
 		gameRunner.run();
 
 	}

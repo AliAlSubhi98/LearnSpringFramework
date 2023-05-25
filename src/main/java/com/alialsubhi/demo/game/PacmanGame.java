@@ -1,16 +1,16 @@
 package com.alialsubhi.demo.game;
 
-public class  SuperContraGame implements GamingConsole{
+public class PacmanGame implements GamingConsole{
     public void up(){
         System.out.println("up");
     }
     public void down(){
-        System.out.println("Sit Down");
+        System.out.println("down");
     }
     public void left(){
-        System.out.println("Go Back");
+        System.out.println("left");
     }
     public void right(){
-        System.out.println("Shoot bullet");
+        System.out.println("right");
     }
 }
