@@ -24,9 +24,17 @@ public class HelloWorldConfiguration {
         return person;
     }
 
-    @Bean
+    @Bean(name = "address2")
     public Address address(){
         var address = new Address("Al Maabilah","Seeb");
         return address;
     }
+
+
+    @Bean
+    public Person person2MethodCall(){
+        var person = new Person(name(),age());
+        return person;
+    }
+
 }
