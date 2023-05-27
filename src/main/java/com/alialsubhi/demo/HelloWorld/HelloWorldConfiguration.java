@@ -5,11 +5,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
-;
+//Address - firstLine + city
+record Address(String firstLine, String city) {
+}
+record Person(String name, int age, Address address) {
+}
 
-;
 @Configuration
-public class HelloWorldConfiguration {
+ class HelloWorldConfiguration {
     @Bean
     public String name(){
         return "ALi AlSubhi Trying";
