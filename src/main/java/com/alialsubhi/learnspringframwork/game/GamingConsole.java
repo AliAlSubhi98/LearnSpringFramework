@@ -1,4 +1,4 @@
-package com.alialsubhi.demo.game;
+package com.alialsubhi.learnspringframwork.game;
 
 public interface GamingConsole {
     void up();

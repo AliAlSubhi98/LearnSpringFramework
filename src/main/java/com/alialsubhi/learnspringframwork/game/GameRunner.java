@@ -1,4 +1,4 @@
-package com.alialsubhi.demo.game;
+package com.alialsubhi.learnspringframwork.game;
 
 public class GameRunner {
     private GamingConsole game;

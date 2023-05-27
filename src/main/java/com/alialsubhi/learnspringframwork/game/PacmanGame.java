@@ -1,4 +1,4 @@
-package com.alialsubhi.demo.game;
+package com.alialsubhi.learnspringframwork.game;
 
 public class PacmanGame implements GamingConsole{
     public void up(){

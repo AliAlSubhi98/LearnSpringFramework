@@ -1,7 +1,7 @@
-package com.alialsubhi.demo;
+package com.alialsubhi.learnspringframwork;
 
-import com.alialsubhi.demo.game.GameRunner;
-import com.alialsubhi.demo.game.PacmanGame;
+import com.alialsubhi.learnspringframwork.game.GameRunner;
+import com.alialsubhi.learnspringframwork.game.PacmanGame;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

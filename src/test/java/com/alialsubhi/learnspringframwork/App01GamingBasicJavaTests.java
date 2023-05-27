@@ -1,4 +1,4 @@
-package com.alialsubhi.demo;
+package com.alialsubhi.learnspringframwork;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

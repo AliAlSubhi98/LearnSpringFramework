@@ -1,4 +1,4 @@
-package com.alialsubhi.demo.test;
+package com.alialsubhi.learnspringframwork.test;
 
 import java.io.Serializable;
 
