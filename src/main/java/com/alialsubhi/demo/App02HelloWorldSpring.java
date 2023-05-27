@@ -1,13 +1,12 @@
 package com.alialsubhi.demo;
 
-import com.alialsubhi.demo.game.GameRunner;
-import com.alialsubhi.demo.game.PacmanGame;
+import com.alialsubhi.demo.HelloWorldConfiguration.Address;
+import com.alialsubhi.demo.HelloWorldConfiguration.HelloWorldConfiguration;
+import com.alialsubhi.demo.HelloWorldConfiguration.Person;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 @SpringBootApplication
