@@ -1,8 +1,5 @@
-package com.alialsubhi.demo;
+package com.alialsubhi.demo.HelloWorld;
 
-import com.alialsubhi.demo.HelloWorldConfiguration.Address;
-import com.alialsubhi.demo.HelloWorldConfiguration.HelloWorldConfiguration;
-import com.alialsubhi.demo.HelloWorldConfiguration.Person;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
