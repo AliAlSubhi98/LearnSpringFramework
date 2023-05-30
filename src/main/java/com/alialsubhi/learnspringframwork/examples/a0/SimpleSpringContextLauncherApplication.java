@@ -1,28 +1,27 @@
-package com.alialsubhi.learnspringframwork;
+package com.alialsubhi.learnspringframwork.examples.a0;
 
-import com.alialsubhi.learnspringframwork.game.GameRunner;
-import com.alialsubhi.learnspringframwork.game.GamingConsole;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.Arrays;
+
 @Configuration
-@ComponentScan("com.alialsubhi.learnspringframwork.game")
+@ComponentScan("com.alialsubhi.learnspringframwork.examples.a1")
 @SpringBootApplication
-public class GamingAppLauncherApplication {
+public class SimpleSpringContextLauncherApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GamingAppLauncherApplication.class, args);
+		SpringApplication.run(SimpleSpringContextLauncherApplication.class, args);
 
 		try (var context =
 					 new AnnotationConfigApplicationContext
-							 (GamingAppLauncherApplication.class)) {
+							 (SimpleSpringContextLauncherApplication.class)) {
 
-			context.getBean(GamingConsole.class).up();
-
-			context.getBean(GameRunner.class).run();
+			Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 
 		}
 	}
