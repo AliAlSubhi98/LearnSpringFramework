@@ -12,22 +12,30 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 @Component
 class MyBusinessClass{
-	
+
 	Dependency1 dependency1;
 	Dependency2 dependency2;
-
 	@Autowired
-	public void setDependency1(Dependency1 dependency1) {
-		System.out.println("Setter Injection = setDependency1");
+	public MyBusinessClass(Dependency1 dependency1, Dependency2 dependency2) {
+		super();
+		System.out.println("Constructor Injection = MyBusinessClass");
+
 		this.dependency1 = dependency1;
-	}
-	@Autowired
-	public void setDependency2(Dependency2 dependency2) {
-		System.out.println("Setter Injection = setDependency2");
-
 		this.dependency2 = dependency2;
 	}
 
+	/*@Autowired
+        public void setDependency1(Dependency1 dependency1) {
+            System.out.println("Setter Injection = setDependency1");
+            this.dependency1 = dependency1;
+        }
+        @Autowired
+        public void setDependency2(Dependency2 dependency2) {
+            System.out.println("Setter Injection = setDependency2");
+
+            this.dependency2 = dependency2;
+        }
+    */
 	public String toString(){
 		return "using " + dependency1 + " and " + dependency2;
 	}
